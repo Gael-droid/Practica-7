@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pratica 8</title>
+</head>
+<body>
+    <div id="encabezado">
+       <div id="Menu">
+        <ul>
+            <li><a href="index.html" title="Pagina principal">Inicio</a></li>
+            <li><a href="nosotros.html" title="Descripcion del negocio">Nosotros</a></li>
+            <li><a href="catalogo.html" title="Catalogo">Nuestros Productos</a></li>
+            <li><a href="galeria.html" title="Fotos">Galeria</a></li>
+            <li><a href="contacto.html" title="Nuestros datos">Contacto</a></li>
+        </ul>
+       </div>
+    </div>
+
+    <div class="areaPrincipal">
+        <div id="datos">
+            <style>
+        
+                .carrusel {
+                    display: flex;
+                    overflow: hidden;
+                    width: 300px; /* Ancho del carrusel, ajusta según tus necesidades */
+                    margin: 0 auto; /* Centrar el carrusel en la página */
+                }
+            
+                .slide {
+                    flex: 0 0 100%; 
+                }
+            
+              
+            </style>
+            </head>
+            <body>
+            <h1></h1>
+            
+            <div class="carrusel">
+                <div class="slide"><img src="https://2.bp.blogspot.com/-spS2jOdUakg/UCli5_o96iI/AAAAAAAAbDQ/vJXM4uIR24M/s320/planta1.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/435e438a-2446-42d5-a861-40fd4c0c326b.3b0e9a4d29461a03cef4a22db9d5e19a.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Imagen 2"></div>
+                <div class="slide"><img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/046d6b19-877f-4c14-9045-68f91f285023.f4addeae78685f881396a928317d01f3.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Imagen 3"></div>
+                
+            </div>
+            
+            <script>
+              
+                const carrusel = document.querySelector('.carrusel');
+                let index = 0;
+            
+                function nextSlide() {
+                    index = (index + 1) % carrusel.children.length;
+                    carrusel.style.transform = `translateX(-${index * 100}%)`;
+                }
+            
+                setInterval(nextSlide, 3000); // Cambia de diapositiva cada 3 segundos (ajusta según tus necesidades)
+            </script>
+        </div>
+    </div>
+
+    <div class="piePagina"></div>
+</body>
+</html>
+
+
+
